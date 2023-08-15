@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    header>img {
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Quicksand', sans-serif;
+        flex-wrap: wrap;
+        justify-content: center;
+    font-size: 26px;
+    align-items: center;
+    
+    }
+
+    nav>ul {
+        list-style: none;
+        
+    }
+
+    nav>li {
+        padding: 25px;
+        background-color: #cb677398;
+
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: center;
+        font-size: 24px;
+        font-family: 'Quicksand', sans-serif;
+
+    }
+
+aside>h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    display: inline-block;
+    background-color: #cb67736c;
+    text-align: center;
+    
+}
+
+aside {
+    background-image: url(https://images.unsplash.com/photo-1691387962141-392434c5127c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1326&q=80g);
+    color: white;
+    background-size: cover;
+    height: 600px;
+    margin: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    padding-left: 30px;
+}
+
+main {
+    background-color: #d3828b95;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+  font-size: 30px;  
+}
+
+.follow {
+   text-align: center;
+}
+
+.follow>img {
+    width:40em;
+    border: 1.5px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(132, 131, 131, 0.444);
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 45px; 
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+}
+
+footer>img {
+  width:4.5em;
+  height:4.5em;
+}
+
+footer>p {
+    font-size: 18px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+}
+
+{box-sizing: border-box;}
+
+/* Button  to open the contact form. fixed it at the bottom of the page */
+.open-button {
+  background-color: #c1999dad;
+  color: white;
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 20px;
+  padding: 16px 20px;
+  border: solid white 1px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* popup form. is hidden */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: none;
+  z-index: 1;
+}
+
+/* form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #d5b3b7e1;
+  color: white;
+  font-family: 'Quicksand', sans-serif; 
+}
+
+/* inputs */
+.form-container input[type=text], .form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* focus on inputs */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* submit button */
+.form-container .btn {
+  background-color: white;
+  color: black;
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 18px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* exit button */
+.form-container .cancel {
+  color: white;
+  font-family: 'Quicksand', sans-serif; 
+  background-color: #534145;
+  font-size: 15px;
+}
+
+/* hover */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+<body>
+    
+ <header>
+<img src="https://img.freepik.com/premium-vector/cat-symbol-logo-decal-tribal-tattoo-design-stencil-vector-illustration_463676-1734.jpg"> <!-- logo -->
+<h1> Gracie's Rescue Cats</h1>
+</header>
+
+<nav>
+<ul> <!-- if time will make these pages, otherwise just focusing on homapage for now-->
+    <nav>
+    <li> <a href ="">ADOPT</a> </li>
+    <li> <a href = "">FOSTER</a> </li>
+    <li> <a href = "">GET INVOLVED</a> </li>
+    <li> <a href = "">MEDIA</a> </li>
+    <li> <a href = "">ABOUT</a> </li>
+    <li> <a href = "">CONTACT</a> </li>
+    <li> <a href = "">DONATE</a> </li>
+</ul>
+</nav> 
+ 
+ <aside>
+   <h2> Jo Jo
+    <p>is looking for her forever family! </p>
+    </h2>
+ </aside>
+
+ <main>
+    <h3> Fostering rescue kitties in Melbourne </h3>
+    <p> You've seen breeders advertising animals in local papers, or on websites; backyard breeders producing litter after litter </p>
+    <p> Many people don't even realise that a staggering 400,000 animals in need of homes end up in shelters and council pounds every year </p>
+<h3> ADOPT DON'T SHOP </h3>
+
+<button>
+    <a href="google.com">GET INVOLVED</a>
+</button>
+
+ </main>
+
+ <div class="follow">
+    <h2> FOLLOW ALONG </h2>
+
+    <section>
+        <img class="slides" src="https://images.unsplash.com/photo-1692066743258-3b391ee445a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1728&q=80" style="width:49.5%">
+        <img class="slides" src="https://images.unsplash.com/photo-1692066581975-2447e627dee3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" style="width:50%">
+        <img class="slides" src="https://images.unsplash.com/photo-1692066890465-d56c4e821de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80" style="width:50%">
+    </section>
+    
+    <script type="text/javascript">
+        var index = 0;
+        change();
+    
+        function change() {
+    
+            var x = document.getElementsByClassName('slides');
+    
+            for(var i = 0; i < x.length; i++) { 
+                x[i].style.display = "none"; 
+            }
+    
+            index++;
+    
+            if(index > x.length) { 
+                index = 1; 
+            }
+    
+            x[index - 1].style.display = "block";
+    
+            setTimeout(change, 1000);
+        }
+    </script>
+    
+
+
+
+   <p> <i> <small> <a href="https://www.instagram.com/gracie_rescuecats"> @gracie_rescuecats </a></small></i> </p>
+    <p> Keep up to date who's in residence looking for a home</p>
+    <p> And various updates from shelters across Melbourne and Sydney </p>
+ </div>
+
+
+ <!-- open form button -->
+<button class="open-button" onclick="openForm()">GET IN TOUCH</button>
+
+<!-- form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Enquire</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" required>
+
+    <label for="msg"><b>Message</b></label>
+    <input type="text" placeholder="Type a brief message or enquiry here" name="msg" required>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Exit</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+ </script>
+
+ <footer>
+    <img src="https://img.freepik.com/premium-vector/cat-symbol-logo-decal-tribal-tattoo-design-stencil-vector-illustration_463676-1734.jpg">
+<p> In close collaboration with
+    <a href ="https://sydneydogsandcatshome.org/">Sydney Dogs and Cats Home</a>
+    And
+    <a href ="https://www.foreverfriends.org.au/?v=6cc98ba2045f">Forever Friends Animal Rescue</a>
+</p>
+ </footer>
+
+</body>
+
+</html>
